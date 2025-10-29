@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ScottishPower Infrastructure as Code Demo</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00953A;
+    }
+
+    p {
+      color: #00953A;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #0074D9;
+    }
+
+    img {
+      margin-bottom: -100px;
+      /* Reduce whitespace below the image */
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="https://www.scottishpower.com/userfiles/image/logo_sp_rect.jpg" alt="ScottishPower Logo">
+  <h1>Infrastructure as Code Demo</h1>
+  <p>The EC2 Instance ID hosting this website is:</p>
+  <h2><strong>$$INSTANCEID$$</strong></h2>
+
+  <p>Refreshing the page will retrieve the webpage from another instance.</p>
+  <p>All AWS resources were created using Terraform.<br>
+    Benefits of using Terraform include improved consistency, version control and easier collaboration.
+  </p>
+
+</body>
+
+</html>
